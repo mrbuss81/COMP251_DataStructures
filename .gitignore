@@ -1,0 +1,20 @@
+# Java
+*.class
+*.jar
+*.war
+*.iml
+*.log
+*.out
+*.tmp
+*.swp
+
+# IDEs and build
+.idea/
+.vscode/
+target/
+bin/
+out/
+
+# MacOS
+.DS_Store
+
