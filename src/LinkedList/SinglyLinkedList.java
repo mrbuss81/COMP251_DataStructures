@@ -1,6 +1,10 @@
 // package week_3;
 // Cleaned and updated by Michael Buss (CompSci RV Dad)
 
+// package LinkedList;
+package LinkedList;
+
+import Stack.ADTList;
 import java.util.NoSuchElementException;
 
 /**

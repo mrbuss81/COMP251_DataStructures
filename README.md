@@ -1,20 +1,82 @@
-# COMP 251 – Data Structures & Algorithms
+# 🧠 COMP251 – Data Structures & Algorithms (UFV)
 
-A collection of Java implementations and exercises completed for **UFV COMP 251 (Data Structures and Algorithms)**.  
-Each module focuses on a specific abstract data type or algorithmic concept, implemented in Java 17.
+**Author:** Michael Buss  
+**Course:** UFV COMP 251 – Data Structures & Algorithms  
+**Purpose:** A clean, working Java portfolio demonstrating foundational data structure implementations from the course — refactored for readability, modularity, and real-world GitHub presentation.
+
+> *“The best way to understand data structures is to build them from scratch.”*  
+> — The CompSci RV Dad 🚐💻
+
+---
 
 ## 🧩 Contents
-- **Stack** – Push/pop operations, string reversal, balanced parentheses, infix → postfix conversion.
+- **Stack** – Push/pop operations, string reversal, balanced parentheses, infix→postfix conversion.
 - **Queue** – FIFO structures, enqueue/dequeue, and circular queue simulation.
 - **Linked List** – Node-based design with insert, delete, and concatenation methods.
 - **Trees** – Binary tree creation, recursive traversals (preorder, inorder, postorder).
 - **Recursion** – Factorial, Fibonacci, and sum-of-odds recursive examples.
+
+---
+
+## 🧱 Project Overview
+This repository showcases reusable, well-structured implementations of core **data structures** written in Java — each organized under its own package:
+
+| Package | Description |
+|----------|--------------|
+| **Stack/** | Abstract List Interface (`ADTList`) and `ArrayBasedList` implementation for array-based storage and dynamic resizing. |
+| **LinkedList/** | Full suite of linked list types including `Node<T>`, `SinglyLinkedList<T>`, `DLLNode`, and `DoublyLinkedList`. |
+| **Trees/** | Basic `BinaryTree` and `TestBinaryTree` implementation with traversal examples. |
+| **Recursion/** | Reserved for future algorithm and recursion exercises. |
+| **Queue/** | Reserved for upcoming queue and circular buffer examples. |
+
+---
+
+## 🧩 Example Run – Singly Linked List
+
+```java
+SinglyLinkedList<String> list = new SinglyLinkedList<>();
+list.add("Alpha");
+list.add("Bravo");
+list.add("Charlie");
+
+System.out.println("Initial List: " + list);
+list.remove(1);
+System.out.println("After Removal: " + list);
+System.out.println("Element at Index 1: " + list.get(1));
+System.out.println("Is Empty? " + list.isEmpty());
+System.out.println("Size: " + list.size());
+```
+
+---
+
+Output:
+
+Initial List: [Alpha, Bravo, Charlie]
+After Removal: [Alpha, Charlie]
+Element at Index 1: Charlie
+Is Empty? false
+Size: 2
+
+---
 
 ## 🧠 Learning Goals
 - Strengthen understanding of Big-O analysis and algorithmic efficiency.  
 - Practice recursion and iterative design.  
 - Reinforce OOP concepts using generics in Java.  
 - Develop clean, modular, and reusable code.
+
+---
+
+⚙️ Tech Notes
+Language: Java 17+
+IDE/Editor: Visual Studio Code & Terminal
+Structure: Multi-package organization under /src and /out
+Compilation:
+
+javac -d out src/Stack/*.java src/LinkedList/*.java
+java -cp out LinkedList.TestSinglyList
+
+---
 
 ## 🛠️ Tools
 - **Language:** Java 17  
@@ -23,5 +85,37 @@ Each module focuses on a specific abstract data type or algorithmic concept, imp
 
 ---
 
+🧭 Learning Reflection
+This project was part of my hands-on journey through UFV’s COMP 251 course.
+It helped me strengthen my understanding of:
+Java package and classpath management
+Generic data type design (Node<T>, ADTList<T>)
+Algorithmic thinking through linked data structures
+Building, testing, and debugging modular Java projects
+Using Git for version control and portfolio presentation
+
+---
+
+🚀 Next Steps
+Implement Queue and Recursion examples
+Extend Tree package with traversal visualization
+Add JUnit tests for automated validation
+Document each data structure’s time complexity
+
+---
+
+👨‍💻 Maintained by Michael Buss — aka The CompSci RV Dad 🚐☕
+
+
+---
+
+
 > *“The best way to understand data structures is to build them from scratch.”*
+
+## 📂 Folder Overview
+- `src/Stack/` → push/pop, balanced parentheses, infix→postfix  
+- `src/Queue/` → enqueue/dequeue, circular queue  
+- `src/LinkedList/` → singly linked lists, concatenation  
+- `src/Trees/` → binary tree insert/traversals  
+- `src/Recursion/` → factorial, Fibonacci, sum odds
 

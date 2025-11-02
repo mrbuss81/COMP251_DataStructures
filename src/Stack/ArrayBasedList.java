@@ -1,3 +1,5 @@
+package Stack;
+
 // package week_3;
 class ArrayBasedList<T> implements ADTList<T> {
     private T[] items;
@@ -102,6 +104,11 @@ class ArrayBasedList<T> implements ADTList<T> {
 
     public boolean contains(T value) {
         return indexOf(value) != -1;
+    }
+    
+    @Override
+    public boolean isEmpty() {
+        return size == 0;
     }
 
     public String toString() {
