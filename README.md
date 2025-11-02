@@ -59,6 +59,77 @@ Size: 2
 
 ---
 
+## 🧩 Example Run – Doubly Linked List
+
+```java
+DoublyLinkedList<String> list = new DoublyLinkedList<>();
+
+list.add("Alpha");
+list.add("Bravo");
+list.add("Charlie");
+System.out.println("Initial List (Forward): " + list);
+
+list.add(1, "Delta");
+System.out.println("After Insertion at index 1 (Forward): " + list);
+
+System.out.println("Element at index 2: " + list.get(2));
+
+list.remove(1);
+System.out.println("After Removal at index 1 (Forward): " + list);
+
+System.out.println("Backward Traversal: " + list.toReverseString());
+
+System.out.println("Is Empty? " + list.isEmpty());
+System.out.println("Size: " + list.size());
+
+---
+
+Output:
+
+Initial List (Forward): [Alpha, Bravo, Charlie]
+After Insertion at index 1 (Forward): [Alpha, Delta, Bravo, Charlie]
+Element at index 2: Bravo
+After Removal at index 1 (Forward): [Alpha, Bravo, Charlie]
+Backward Traversal: [Charlie, Bravo, Alpha]
+Is Empty? false
+Size: 3
+
+---
+
+## 🧩 Example Run – Array-Based List
+
+```java
+ArrayBasedList<String> list = new ArrayBasedList<>(10);
+list.add("Alpha");
+list.add("Bravo");
+list.add("Charlie");
+System.out.println("Initial List: " + list);
+
+list.add(1, "Delta");
+System.out.println("After Insertion at index 1: " + list);
+
+System.out.println("Element at index 2: " + list.get(2));
+
+list.remove(1);
+System.out.println("After Removal at index 1: " + list);
+
+System.out.println("Is Empty? " + list.isEmpty());
+System.out.println("Size: " + list.size());
+
+---
+
+Output:
+
+Initial List: [Alpha, Bravo, Charlie], Size: 3, Capacity: 10
+After Insertion at index 1: [Alpha, Delta, Bravo, Charlie], Size: 4, Capacity: 10
+Element at index 2: Bravo
+After Removal at index 1: [Alpha, Bravo, Charlie], Size: 3, Capacity: 10
+Is Empty? false
+Size: 3
+
+
+---
+
 ## 🧠 Learning Goals
 - Strengthen understanding of Big-O analysis and algorithmic efficiency.  
 - Practice recursion and iterative design.  
