@@ -127,6 +127,28 @@ After Removal at index 1: [Alpha, Bravo, Charlie], Size: 3, Capacity: 10
 Is Empty? false
 Size: 3
 
+---
+
+## 🌳 Example Run – Binary Tree Traversal
+
+```java
+BinaryTree<Integer> tree = new BinaryTree<>();
+int[] values = {4, 2, 3, 35, 25, 48, 87, 109, 270};
+for (int v : values) tree.insert(v);
+
+System.out.println("Preorder: " + tree.preorder());
+System.out.println("Inorder: " + tree.inorder());
+System.out.println("Postorder: " + tree.postorder());
+System.out.println("Level Order (BFS): " + tree.levelOrder());
+
+---
+
+Output:
+
+Preorder: [4, 2, 35, 25, 48, 87, 3, 109, 270]
+Inorder: [35, 2, 48, 25, 87, 4, 109, 3, 270]
+Postorder: [35, 48, 87, 25, 2, 109, 270, 3, 4]
+Level Order (BFS): [4, 2, 3, 35, 25, 109, 270, 48, 87]
 
 ---
 
